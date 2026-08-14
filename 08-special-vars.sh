@@ -1,6 +1,9 @@
 #/!bin/bash
 
-SUM="$1+$2+$3"
+NUMBER1=$1
+NUMBER2=$2
+
+SUM=$(($NUMBER1+$NUMBER2+$NUMBER3))
 
 echo "vars $1 $2 $3"
 
