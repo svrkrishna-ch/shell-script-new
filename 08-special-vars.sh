@@ -1,8 +1,12 @@
 #/!bin/bash
 
+SUM="$1+$2+$3"
+
 echo "vars $1 $2 $3"
 
 echo "All vars passed are $@"
+
+echo "Sum of vars are $SUM"
 
 echo "Number of vars are $#"
 
