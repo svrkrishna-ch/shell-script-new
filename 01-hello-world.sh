@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 #this line is commented
 
