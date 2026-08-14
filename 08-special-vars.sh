@@ -16,4 +16,6 @@ echo "User running the script is $USER"
 
 echo "Process id of current script is $$"
 
+sleep 10 &
+
 echo "Process id of last command in background is $!"
