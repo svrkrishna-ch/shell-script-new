@@ -10,11 +10,18 @@ fi
 
 dnf install mysqll -y
 
-# if [ $?-ne 0 ]
-# then
-#     echo "Installing MYSQL ... FAILED"
-# else
-#     echo "Installing MYSQL ... SUCCESS"
-# fi
+if [ $?-ne 0 ]
+then
+    echo "Installing MYSQL ... FAILED"
+else
+    echo "Installing MYSQL ... SUCCESS"
+fi
 
 dnf install git -y
+
+if [ $?-ne 0 ]
+then
+    echo "Installing GIT ... FAILED"
+else
+    echo "Installing GIT ... SUCCESS"
+fi
