@@ -8,9 +8,9 @@ Y="\e[33m"
 VALIDATE(){
     if [ $1-ne 0 ]
     then
-        echo "Installing $2 ... $R FAILED"
+        echo -e "Installing $2 ... $R FAILED"
     else
-        echo "Installing $2 ... $G SUCCESS"
+        echo -e "Installing $2 ... $G SUCCESS"
     fi
 }
 
@@ -27,7 +27,7 @@ then
     dnf install mysql -y
     VALIDATE $? "MySQL"
 else
-    echo "MySQL is already ... $Y INSTALLED"
+    echo -e "MySQL is already ... $Y INSTALLED"
 fi
 
 dnf list installed git
@@ -37,5 +37,5 @@ then
     dnf install git -y
     VALIDATE $? "Git"
 else
-    echo "Git is already ... $Y INSTALLED"
+    echo -e "Git is already ... $Y INSTALLED"
 fi
