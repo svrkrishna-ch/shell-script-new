@@ -38,4 +38,5 @@ echo "Files to be deleted are $FILES_TO_DEL"
 while read -r file
 do
     echo "Deleting file: $file"
+    rm -rf $file
 done <<< $FILES_TO_DEL
