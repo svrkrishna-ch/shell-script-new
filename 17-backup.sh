@@ -58,7 +58,7 @@ then
         do
             echo "Deleting file: $filepath" &>>$LOG_FILE_NAME
             rm -rf $filepath
-            echo -e "$G Deleted file $filepath $N"
+            echo -e "Deleted file $filepath"
         done <<< $FILES
     else
         echo -e "$R ERROR:: Failed to create zip file $N"
