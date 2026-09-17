@@ -19,7 +19,6 @@ USAGE(){
 }
 
 mkdir -p /home/ec2-user/shellscript-logs
-echo "File name: $0"
 
 if [ $# -ne 2 ]
 then
